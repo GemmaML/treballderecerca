@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treball de Recerca</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #bada9e;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        #capsal {
+            width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #359381;
+            padding: 6px 15px;
+            border-radius: 20px;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+
+        .navigation a:hover,
+        .navigation a.active {
+            background: #359381;
+            color: #fff;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .sec p {
+           padding: 40px;
+            text-align: justify;
+            font-size:16px;
+        }
+
+        .sec {
+            background-color: #cddb8c;
+        }
+
+        #imatges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .image {
+            margin: 10px;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="../../../../projecte_web/index.html">Inici</a>
+            <a href="../capitols/info.html">Info</a>
+            <a href="../capitols/pmfc/pmfc.html">Primera versió</a>
+            <a href="../capitols/2pmfc/2pmfc.html">Segona Versió</a>
+            <a href="../capitols/conclusio.html" class="active">Conclusions</a>
+        </nav>
+    </header>
+
+    <img id="capsal" src="../capitols/img_inf/capsal4.png">
+
+    <section class="sec">
+        <p>
+            En aquest treball de recerca he explorat la viabilitat de les cel·les de combustible microbià (CCMV) com a font d’energia sostenible. M’he centrat en la producció de voltatge amb plantes de fotosíntesi C3 i C4, com l’alfàbrega, el blat de moro i la calèndula, i he analitzat factors com la humitat del sòl i el creixement de les plantes. Els experiments m’han permès generar suficient energia per encendre LED de baixa intensitat durant diverses hores, cosa que m’ha sorprès gratament, tenint en compte la senzillesa del sistema. <br><br>
+
+            He descobert que la humitat del sòl influeix molt en l’eficiència del sistema. Quan la humitat superava el 85%, el voltatge disminuïa dràsticament, arribant a passar de 5 V a menys d’1 V, possiblement per problemes d’oxigenació i dificultats en el flux d’electrons. Al principi pensava que més aigua beneficiaria el corrent, però he après que un nivell òptim de 40-70% és molt més eficient. També he vist que el voltatge augmenta amb el creixement de les plantes i s’estabilitza quan aquestes arriben a la maduresa, cosa que he pogut confirmar amb l’experiment de les llenties. <br><br>
+            
+            Tot i que vaig aconseguir demostrar el funcionament de les CCMV i obtenir dades interessants, no he pogut determinar amb claredat si les diferències en el voltatge es deuen al tipus de fotosíntesi o a altres factors. A més, vaig tenir problemes amb les plantes: algunes es van malmetre per calor, sequera o plagues com el pugó. També em vaig trobar amb l’oxidació dels elèctrodes, que vaig haver de substituir diverses vegades. <br>
+            Aquest procés m’ha ensenyat molt sobre la importància de controlar les condicions experimentals i d’adaptar-me als obstacles. Si hagués tingut més temps i recursos, hauria optimitzat el sistema amb materials més resistents i un millor disseny, a més de garantir un període sense interrupcions per prendre dades més fiables. <br><br>
+            
+            Malgrat les dificultats, el balanç final és molt positiu. He après sobre aquesta tecnologia innovadora, la interacció entre plantes i microorganismes del sòl, i la possibilitat d’utilitzar la natura com a aliada per a solucions energètiques sostenibles. Aquest treball m’ha ensenyat la importància de la constància i la planificació, i m’ha deixat fascinada per com la natura i la tecnologia poden col·laborar per crear un futur més inspirador i respectuós amb el medi ambient.
+            <br>
+        </p>
+
+        <div id="imatges">
+            <div class="image"><img src="../capitols/2pmfc/img/led2.jpg" alt="Image 1"></div>
+            <div class="image"><img src="../capitols/2pmfc/img/led3.jpg" alt="Image 2"></div>
+            <div class="image"><img src="../capitols/2pmfc/img/plantes.jpg" alt="Image 3"></div>
+            <div class="image"><img src="../capitols/2pmfc/img/humitat.jpg" alt="Image 4"></div>
+            <div class="image"><img src="../capitols/2pmfc/img/alfabrega.jpg" alt="Image 5"></div>
+            <div class="image"><img src="../capitols/2pmfc/img/calendula.png" alt="Image 6"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

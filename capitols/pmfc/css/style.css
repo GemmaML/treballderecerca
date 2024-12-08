@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    z-index: 100;
+}
+    #capsal{
+        width: 100%;
+                height: auto;
+                display: block;
+                position: relative; 
+                z-index: 1;
+    }    
+body{
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+#text {
+    position: absolute;
+    font-size: 5em;
+    color:#fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0, .2);
+}
+
+.content{
+    position: relative;
+    background: #1c4125;
+    padding: 100px;
+   
+}
+.content  p{
+    font-size:16px;
+    color:#fff;
+    font-weight:300;
+  
+}
+.content h2{
+    color:#BAda9E;
+    width: fit-content;
+}
+.content h2:hover, 
+.content h2.active {
+ background: #BAda9E;
+ color:#1c4125;
+}
+#imatge1{
+    justify-content: center;
+    align-items: center;
+    display: inline;
+}
+#esquema{ 
+    transition: all .2s ease-in-out; 
+}
+
+#esquema:hover { 
+    transform: scale(1.1); 
+}
+.experiment{
+    position: relative;
+    background: #BAda9E;
+    padding: 100px;
+}
+.experiment p{
+    font-size:16px;
+    color:#000000;
+    font-weight:300;
+  
+}
+#imatge1{
+    float: left;
+    margin-right: 20px;
+    width: 35%;
+}
+
+#plants img{
+    height: 350px;
+    width: 350px;
+    padding: 10px;
+    transition: 1s ease;
+}
+#plants img:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+}
+
+#table img{
+    padding: 10px;
+  
+}
+#info1{
+    display: none;
+}
+#info2{
+    display: none;
+}
+#info3{
+    display: none;
+}
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.navigation a:hover, 
+.navigation a.active {
+ background: #359381;
+ color:#fff;
+}

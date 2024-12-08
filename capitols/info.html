@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informació</title>
+</head>
+<body>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#capsal{
+    width: 100%;
+            height: auto;
+            display: block;
+            position: relative; 
+            z-index: 1;
+   
+}
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.navigation a:hover, 
+.navigation a.active {
+ background: #359381;
+ color:#fff;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    z-index: 100;
+}
+    .content{
+    position: relative;
+    background: #1c4125;
+    padding: 50px;
+    align-items: center;
+
+    }
+    .content  p{
+    color:#fff;
+    font-weight:300;
+    font-size:16px;
+    text-align: justify;
+  
+}
+.content h2{
+    color:#BAda9E;
+    width: fit-content;
+}
+.content h2:hover, 
+.content h2.active {
+ background: #BAda9E;
+ color:#1c4125;
+}
+body{
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+#text {
+    position: absolute;
+    font-size: 5em;
+    color:#fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0, .2);
+}
+#queson{
+    padding: 15px;
+    display: flex; 
+    border-radius: 250px;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+#comfuncionen{
+    padding: 15px;
+    display: flex; 
+    border-radius: 250px;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+#queson:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.5s ease;}
+
+#comfuncionen:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.5s ease;}
+.img1{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+#info1{
+    display: none;
+    margin-top: 10px;
+}
+#info2{
+    display: none;
+    margin-top: 10px;
+}
+.esquema {
+    width: 300px;
+    height: 175px;
+    margin: 15px;
+}
+
+    </style>
+
+    <header>
+        <nav class="navigation">
+            <a href="../../../../projecte_web/index.html" id="casa">Inici</a>
+            <a href="capitols/info.html" class="active">Info</a>
+            <a href="../capitols/pmfc/pmfc.html">Primera versió</a>
+            <a href="../capitols/2pmfc/2pmfc.html">Segona Versió</a>
+            <a href="../capitols/conclusio.html">Conclusions</a>
+        </nav>
+    </header>
+    
+    <section >
+        <img id="capsal" src="img_inf/infocapsal.png">
+    </section>
+    <section class="content">
+        <div class="img1">
+             <img id="queson" src="img_inf/qs.png">
+                <img id="comfuncionen" src="img_inf/cf.png">      
+        </div>
+        <div id="info1">
+            <h2>Què són?</h2>
+            <p> 
+                La cel·la de combustible microbià o CCM és una tecnologia en la qual la matèria orgànica es converteix en energia elèctrica utilitzant plantes vives i bacteris del sòl. Les fulles de les plantes generen matèria orgànica (glúcids especialment) gràcies a la fotosíntesi. Tanmateix, gran part d’aquesta matèria orgànica no és aprofitada per la planta i es diposita a la zona pròxima a les arrels. 
+                Aquest sucre és el principal aliment dels bacteris viuen al substrat. Així, aquests microorganismes es nodreixen de la matèria orgànica rebutjada per la planta.
+                En descompondre aquests sucres s’allibera certa quantitat d’electrons, que són captats per l’ànode i càtode del circuit extern i, en conseqüència s’obté electricitat.  
+                A diferència de la pila de terra, aquest corrent elèctric que es crea es va renovant, ja que la planta farà la fotosíntesi i d’aquesta manera continuarà alimentant als bacteris del sòl.
+
+                <br><br>
+            </p>
+        </div>
+        <div id="info2">
+            <h2>Com funcionen?</h2>
+            <p>
+                Una pila de terra està inspirada en la pila voltaica i es basa en principis molt similars a aquestes bateries creades per Alessandro Volta. La diferència principal és que fan servir el sòl com a medi conductor entre els dos elèctrodes.
+                En una bateria de terra, dos metalls diferents es col·loquen enterrats a certa distància (per exemple, coure i zinc) a manera d’elèctrodes. Llavors, gràcies als minerals i humitat del terra, els ions són transferits entre els dos elèctrodes, funcionant de manera similar a un electròlit en una pila tradicional. Per tant, la qualitat i composició del sòl influirà directament en l’eficiència d’aquesta bateria.
+                <br>En concret, en aquest treball s’han disposat 6 torretes, en les quals s’ha fet un circuit amb elèctrodes de zinc i coure, seguint les imatges següents.
+                <br><br>
+            </p>
+                <center><img class="esquema" src="img_inf/esquema2.png" alt="">
+                    <img class="esquema" src="img_inf/esquema3.png" alt=""></center>
+            <p> 
+                <br><br>
+                Els bacteris, durant un procés metabòlic anomenat glucòlisi, descomponen la matèria orgànica que ha proporcionat la planta i com a resultat d’aquesta descomposició, s’obtenen electrons. Els bacteris poden transmetre aquests electrons cap a l’exterior de la seva membrana cel·lular. D’aquesta manera, els electrons són transferits directament a l’ànode i més tard són conduïts al càtode. 
+                A la vegada, el bacteri també expulsarà protons d’hidrogen, ja que  aquest element també està present en els compostos orgànics. Aquests protons seran transportats cap al càtode a través de les sals minerals del sòl, que actuen com a electròlit. Finalment, quan els protons arriben al càtode, reaccionen amb l’oxigen de l’aire per formar aigua.
+                <br><br>
+            </p>
+            <center>
+                <img src="img_inf/esquema1.png" class="esquema2" alt="">
+            </center>
+            
+        </div> 
+    </section>
+
+      
+           
+
+    <script>
+        document.getElementById("queson").addEventListener("click",amaga)
+        document.getElementById("comfuncionen").addEventListener("click",amaga2)
+        function amaga (){
+    var inf=document.getElementById("info1")
+    if(inf.style.display==="none") inf.style.display="inline-block"
+    else inf.style.display="none"
+}
+        function amaga2(){
+            var inf=document.getElementById("info2")
+    if(inf.style.display==="none") inf.style.display="inline-block"
+    else inf.style.display="none"
+        }
+
+
+    </script>
+</body>
+</html>

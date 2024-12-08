@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    z-index: 100;
+}
+#capsal{
+    width: 100%;
+            height: auto;
+            display: block;
+            position: relative; 
+            z-index: 1;
+}    
+body{
+    background: #BAda9E;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.experiment p{
+    font-size:16px;
+    color:#000000;
+    font-weight:300;
+  
+}
+.experiment{
+    padding: 20px;
+}
+#crisantems{
+    width: 550px;
+    padding: 10px;
+}
+#led{
+    width: 550px;
+    padding:10px;
+}
+#aigua{
+    width: 150px;
+}
+#aigua:hover {
+        background: #d4de8e;
+        border-radius: 10px;
+       }
+#aigua_inf{
+    display: none;
+    margin-top: 10px;
+    background-color: #1c4125;
+    padding: 40px;
+   text-align: justify;
+    align-items: center;
+}
+#aigua_inf p{
+    color: #f9f9f9;
+}
+.grafic{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+}
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.navigation a:hover, 
+.navigation a.active {
+ background: #359381;
+ color:#fff;
+}
+
+.experiment2{
+    background:#1c4125;
+    position: relative;
+    padding: 100px;
+}
+.experiment2 p{
+    font-size:16px;
+    color:#f9f9f9;
+    font-weight:300;
+  
+}
+.experiment2{
+    color: #BAda9E;
+}
+.img2 img{
+    width: 500px;
+    padding: 30px;
+    display: inline-flex;
+    
+}
+button {
+    position: relative;   
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #359381;
+    background: #BAda9E;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #359381;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #359381;
+    height: 60px;
+    margin-left: 10px;
+  }
+  
+  button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #359381;
+  }
+  button:active {
+    transform: scale(0.9);
+  }
+  .info{
+    display: inline-flex;
+    padding: 10px;
+  }
+  #info2{
+    display: none;
+    background-color:#BAda9E ;
+  }
+#info2 p{
+    color: #1c4125;
+    margin: 30px;
+    margin-bottom: 10px;
+}
+
